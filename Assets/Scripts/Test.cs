@@ -54,6 +54,13 @@ public class Test : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter(Collider col){
+        if (col.transform.gameObject.name == "Llorona"){
+            Debug.Log("Tu hermana ha sido secuestrada");
+                
+            }
+    }
+
  
 
 

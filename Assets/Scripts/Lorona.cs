@@ -35,7 +35,7 @@ public class Lorona : MonoBehaviour
     }
 
     void SeguirJugador(){
-        if(Vector3.Distance(posLlorona.position, transform.position) > 2f){
+        if(Vector3.Distance(posLlorona.position, transform.position) > 1f){
              Vector3 direccion = (posLlorona.position - transform.position).normalized;
              transform.position += 5 * direccion * Time.deltaTime; 
     }}
