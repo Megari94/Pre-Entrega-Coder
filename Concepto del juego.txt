@@ -1,0 +1,6 @@
+Hola!, soy Marianela.
+Mi idea es la de un juego, que contenga varias leyendas, donde 2 hermanas tienen que ir pasando por diferentes lugares tratando de llegar a los puntos de control antes de ser atrapadas por los seres mitologicos con los que se encuentren.
+La primera parte (esta mini demo), trataria de la llorona, que trata de secuestrar a la hermana menor de la protagonista. El objetivo es llegar al farol que se encuentra en medio del bosque. 
+En si el juego tiene una dinamica simple, es de escape. Para el proyecto final tenia la idea de ir integrando objetos con los que se puedan defender. 
+Todavia me falta varias cosas como para que sea mas amigable con el jugador. 
+Espero que la idea les guste :D
