@@ -61,6 +61,12 @@ public class Test : MonoBehaviour
             }
     }
 
+    void OnTriggerStay(Collider col){
+        if (col.transform.gameObject.name == "farol"){
+            Debug.Log("Estan a Salvo!!");
+        }
+    }
+
  
 
 
