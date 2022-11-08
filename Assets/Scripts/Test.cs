@@ -16,15 +16,20 @@ public class Test : MonoBehaviour
     void Update()
     {
        Movimiento();
-       CambiarCamara();
+       
 
        if(Input.GetKeyDown(KeyCode.Space)){
+            animacion.SetBool("corriendo", true);
+       }else if(Input.GetKeyDown(KeyCode.W)){
             animacion.SetBool("corriendo", true);
        }
 
        if(Input.GetKeyUp(KeyCode.Space)){
             animacion.SetBool("corriendo", false);
+       }else if(Input.GetKeyUp(KeyCode.W)){
+            animacion.SetBool("corriendo", false);
        }
+       
        
     }
 
@@ -43,16 +48,7 @@ public class Test : MonoBehaviour
         }
     }
 
-    void CambiarCamara(){
-        if(Input.GetKeyDown(KeyCode.K)){
-            camUno.SetActive(false);
-            camDos.SetActive(true);
-        }
-         if(Input.GetKeyDown(KeyCode.J)){
-            camUno.SetActive(true);
-            camDos.SetActive(false);
-        }
-    }
+    
 
     void OnTriggerEnter(Collider col){
         if (col.transform.gameObject.name == "Llorona"){

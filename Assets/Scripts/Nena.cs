@@ -19,11 +19,17 @@ public Animator animacion;
        SeguirJugador();
          if(Input.GetKeyDown(KeyCode.Space)){
             animacion.SetBool("nenaCorriendo", false);
+       }else if(Input.GetKeyDown(KeyCode.W)){
+            animacion.SetBool("nenaCorriendo", false);
        }
 
        if(Input.GetKeyUp(KeyCode.Space)){
             animacion.SetBool("nenaCorriendo", true);
+       }else if(Input.GetKeyUp(KeyCode.W)){
+            animacion.SetBool("nenaCorriendo", true);
        }
+
+       
     }
 
     void SeguirJugador(){
