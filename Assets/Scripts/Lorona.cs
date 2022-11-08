@@ -40,7 +40,12 @@ public class Lorona : MonoBehaviour
              transform.position += 5 * direccion * Time.deltaTime; 
     }}
 
-    
+    void OnTriggerEnter(Collider col){
+        if (col.transform.gameObject.name == "farol"){
+            transform.position=new Vector3(65, 3, 1);
+                
+            }
+    }
     
 }
 
