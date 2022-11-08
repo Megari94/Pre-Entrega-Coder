@@ -67,7 +67,11 @@ public class Test : MonoBehaviour
         }
     }
 
- 
+    void OnTriggerExit(Collider col){
+        if (col.transform.gameObject.name == "farol"){
+            Debug.Log("Vuelve a la luz!");
+        }
+    }
 
 
  

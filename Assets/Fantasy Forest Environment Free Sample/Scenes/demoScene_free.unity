@@ -654,6 +654,37 @@ Transform:
   m_Father: {fileID: 1073489354}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &649115317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8934777400606672865, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
+  m_PrefabInstance: {fileID: 1662936439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &649115321
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649115317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.46, y: -1.2200378e-16}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.32, y: 0.0042579225}
+  m_EdgeRadius: 12.34
 --- !u!1 &649404355
 GameObject:
   m_ObjectHideFlags: 3
@@ -872,7 +903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 735863703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.5, y: 0.3, z: 0}
+  m_LocalPosition: {x: 64.5, y: 0.3, z: 6.4}
   m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -969,7 +1000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939902223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: -5, y: 0.3, z: 6.1}
   m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1241,7 +1272,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191375671}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 1.4, z: -64.4}
+  m_LocalPosition: {x: -6, y: 1.4, z: -69}
   m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1478,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.028137
+      value: -0.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1514,7 +1545,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 300df7b8cc4d3984d8338c83b9773be3, type: 2}
     - target: {fileID: 919132149155446097, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
       propertyPath: m_Name
-      value: Street_Lamp_1 (1)
+      value: farol
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
@@ -1649,6 +1680,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1910953506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aee24e53a98a1e24eb25b6fb2a64280b, type: 3}
+  m_PrefabInstance: {fileID: 1662936439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1910953507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910953506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 5}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!1 &2019702016
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,7 +1768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019702016}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.5, y: 0.3, z: -64.4}
+  m_LocalPosition: {x: 64.5, y: 0.3, z: -68.1}
   m_LocalScale: {x: 0.5, y: 0.1, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1736,7 +1785,7 @@ GameObject:
   - component: {fileID: 2124865331}
   - component: {fileID: 2124865332}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: faro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1827,7 +1876,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1266885829584714714, guid: 14c9bcaea030a5742bc2bc446f1c7f27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -69.9
+      value: 122.4
       objectReference: {fileID: 0}
     - target: {fileID: 1266885829584714714, guid: 14c9bcaea030a5742bc2bc446f1c7f27, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1835,7 +1884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1266885829584714714, guid: 14c9bcaea030a5742bc2bc446f1c7f27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.3
+      value: -171.5
       objectReference: {fileID: 0}
     - target: {fileID: 1593808685407972617, guid: 14c9bcaea030a5742bc2bc446f1c7f27, type: 3}
       propertyPath: m_Name
