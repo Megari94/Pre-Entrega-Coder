@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lorona : MonoBehaviour
 {
     public Transform posLlorona;
-    public float velocidad = 5f;
+    public float velocidad = 3f;
     public enum TipoDeEnemigo{
         vUno,
         vDos
@@ -43,7 +43,7 @@ public class Lorona : MonoBehaviour
     void OnTriggerEnter(Collider col){
         if (col.transform.gameObject.name == "farol"){
             transform.position=new Vector3(65, 3, 1);
-                
+             MirarJugador();    
             }
     }
     
