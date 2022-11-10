@@ -6,6 +6,8 @@ public class Lorona : MonoBehaviour
 {
     public Transform posLlorona;
     public float velocidad = 3f;
+    
+    
     public enum TipoDeEnemigo{
         vUno,
         vDos
@@ -24,6 +26,8 @@ public class Lorona : MonoBehaviour
             break;
        }
         
+      
+       
         
     }
 

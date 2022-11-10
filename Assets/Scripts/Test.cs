@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    
-    
+    public LayerMask detectar;
+    float maxDis= 30f;
     public float speed;    
     public Animator animacion;
     public GameObject camUno;
@@ -28,6 +28,17 @@ public class Test : MonoBehaviour
             animacion.SetBool("corriendo", false);
        }else if(Input.GetKeyUp(KeyCode.W)){
             animacion.SetBool("corriendo", false);
+       }
+       
+       RaycastHit hit;
+       Ray rayc = new Ray(transform.position, transform.forward);
+       
+       
+       if (Physics.Raycast(rayc, out hit, maxDis, detectar)){
+            
+            
+            Debug.Log("HURRY UP!!");
+            
        }
        
        
