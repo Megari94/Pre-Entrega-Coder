@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Test : MonoBehaviour
@@ -8,10 +10,14 @@ public class Test : MonoBehaviour
     public Animator animacion;
     public GameObject camUno;
     public GameObject camDos;
+    public List<Transform> posAleatorea = new List<Transform>();
 
     void Start()
     {
-       
+       transform.position = posAleatorea[Random.Range(0, posAleatorea.Count)].position;
+       foreach (Transform b in posAleatorea ){
+        Debug.Log("Busca a tu hermana");
+       }
     }
     void Update()
     {
