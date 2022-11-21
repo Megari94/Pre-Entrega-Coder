@@ -25,7 +25,7 @@ public class raycast : MonoBehaviour
        
        if (Physics.Raycast(ray, out hit, maxDis, detectar)){
             //audio.Play();
-            vida -= vidaMaxima;
+            vida = vida - 0.1f;
             barraDeVida.CambiarVidaActual(vida);
             Debug.Log("RUN");
             
