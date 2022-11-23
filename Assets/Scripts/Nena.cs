@@ -3,30 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Nena : MonoBehaviour
+public class Nena : Test
 {
 public Transform posNena;
 public float velocidadNena = 5f; 
-public Animator animacion;  
+public Animator animation;  
     void Start()
     {
         
     }
 
     
-    void Update()
+    void Update() 
     {
+          Movimiento();
+          
        SeguirJugador();
          if(Input.GetKeyDown(KeyCode.Space)){
-            animacion.SetBool("nenaCorriendo", false);
+            animation.SetBool("nenaCorriendo", false);
        }else if(Input.GetKeyDown(KeyCode.W)){
-            animacion.SetBool("nenaCorriendo", false);
+            animation.SetBool("nenaCorriendo", false);
        }
 
        if(Input.GetKeyUp(KeyCode.Space)){
-            animacion.SetBool("nenaCorriendo", true);
+            animation.SetBool("nenaCorriendo", true);
        }else if(Input.GetKeyUp(KeyCode.W)){
-            animacion.SetBool("nenaCorriendo", true);
+            animation.SetBool("nenaCorriendo", true);
        }
 
        

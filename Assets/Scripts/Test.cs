@@ -22,9 +22,9 @@ public class Test : MonoBehaviour
     void Update()
     {
        Movimiento();
-       
-
-       if(Input.GetKeyDown(KeyCode.Space)){
+        
+        
+        if(Input.GetKeyDown(KeyCode.Space)){
             animacion.SetBool("corriendo", true);
        }else if(Input.GetKeyDown(KeyCode.W)){
             animacion.SetBool("corriendo", true);
@@ -35,6 +35,8 @@ public class Test : MonoBehaviour
        }else if(Input.GetKeyUp(KeyCode.W)){
             animacion.SetBool("corriendo", false);
        }
+
+     
        
        RaycastHit hit;
        Ray rayc = new Ray(transform.position, transform.forward);
@@ -51,8 +53,11 @@ public class Test : MonoBehaviour
     }
 
     
+       
+    
+    
 
-    void Movimiento(){
+    public void Movimiento(){
         float movX = Input.GetAxis("Horizontal");
         float movY = Input.GetAxis("Vertical");
         transform.Translate(new Vector3(movX, 0, movY) * speed * Time.deltaTime);;
