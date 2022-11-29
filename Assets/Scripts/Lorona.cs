@@ -14,6 +14,12 @@ public class Lorona : MonoBehaviour
         vDos
     };
     public TipoDeEnemigo type;
+
+    void Start()
+    {
+        Eventos.evento += SeguirJugador;
+    }
+
     void Update()
     {
        switch (type) {

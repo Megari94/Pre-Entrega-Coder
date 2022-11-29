@@ -5,7 +5,7 @@ using System;
 
 public class CambiarColorLuz : MonoBehaviour
 {
-    public GameObject farol;
+    public GameObject Light; 
     void Start()
     {
         Eventos.evento += CambiarColor;
@@ -13,7 +13,8 @@ public class CambiarColorLuz : MonoBehaviour
 
      void CambiarColor()
     {
-        GetComponent<Renderer>().material.color = Color.red;
+        transform.Rotate(150, 34, 165);
+        
     }
 
     

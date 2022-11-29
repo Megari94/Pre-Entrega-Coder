@@ -10,7 +10,7 @@ public float velocidadNena = 5f;
 public Animator animation;  
     void Start()
     {
-        
+        Eventos.evento += SeguirJugador;
     }
 
     
