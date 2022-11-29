@@ -14,7 +14,7 @@ public class Test : MonoBehaviour
 
     void Start()
     {
-       transform.position = posAleatorea[Random.Range(0, posAleatorea.Count)].position;
+       transform.position = posAleatorea[Random.Range(0, posAleatorea.Count-1)].position;
        foreach (Transform b in posAleatorea ){
         Debug.Log("Busca a tu hermana");
        }
