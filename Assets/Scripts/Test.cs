@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Test : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Test : MonoBehaviour
     public GameObject camUno;
     public GameObject camDos;
     public List<Transform> posAleatorea = new List<Transform>();
-
+    
     void Start()
     {
        transform.position = posAleatorea[Random.Range(0, posAleatorea.Count-1)].position;
@@ -49,6 +50,7 @@ public class Test : MonoBehaviour
             
        }
        
+      
        
     }
 
