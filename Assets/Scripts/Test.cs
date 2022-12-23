@@ -1,8 +1,9 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
-
+using UnityEngine.SceneManagement;
 public class Test : MonoBehaviour
 {
     public LayerMask detectar;
@@ -77,12 +78,14 @@ public class Test : MonoBehaviour
     void OnTriggerEnter(Collider col){
         if (col.transform.gameObject.name == "Llorona"){
             Debug.Log("Tu hermana ha sido secuestrada");
+            SceneManager.LoadScene("GameOver");
                 
             }
     }
 
     void OnTriggerStay(Collider col){
         if (col.transform.gameObject.name == "farol"){
+            SceneManager.LoadScene("Winner");
             Debug.Log("Estan a Salvo!!");
         }
     }

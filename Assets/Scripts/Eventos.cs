@@ -14,7 +14,7 @@ public class Eventos : MonoBehaviour
     
     void Update()
     {
-       if(Input.GetMouseButtonDown(0))
+       if(Input.GetKeyDown(KeyCode.H))
         {
             /* if(evento =! null)
             {
